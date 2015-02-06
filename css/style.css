@@ -1,0 +1,115 @@
+/* Playing with Media Queries */
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+
+
+/* General Styles */
+body {
+  max-width: 500px;
+  color: grey;
+  font-family: 'Cabin', sans-serif;
+  margin: auto;
+  background:  red;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 40em){
+  body{
+    background:  #9e091e;
+  }
+  #hero {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    background:  #eff4ce;
+    border: 2px solid #f21735; 
+  }
+  #super_heroes li {
+    height: 40px;
+    /*width: 100%;*/
+    margin: 15px auto;
+    background: #ba7;
+    border: 2px solid #b0061e;
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width:40.063em) and (max-width: 60em){
+  body{
+    background:#defec8;
+  }
+  #hero{
+    height: 200px;
+    width: 100%;
+    background: #bad6e5;
+    border: 3px solid #1c3;
+  }
+  #super_heroes {
+    /*height: ;*/
+    max-width: 100%;
+    margin-top: 20px;
+    background: #bee9e2;
+    border: 1px solid #91ece5;
+  }
+  #super_heroes li {
+    height: 300px;
+    margin: 20px auto;
+  }
+  #super_heroes li:nth-child(3){
+    background-image: url(../img/pinkranger.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #super_heroes li:nth-child(2){
+    background-image: url(../img/doctorgf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #super_heroes li:nth-child(1){
+    background-image: url(../img/brock2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (min-width:60.063em){
+  body {
+    background: #20d1ac; 
+  }
+  #container {
+    background: #91e2ce;
+    border: 1px solid #2ec19e;
+  }
+  #hero {
+    height: 300px;
+    width: 460px;
+    margin: 20px;
+    background: #d1e5e1;
+  }
+  #super_heroes {
+    width: 420px;
+    margin: 20px;
+    background: #d3f3c8;
+  }
+  #super_heroes li{
+    height: 300px;
+    border-bottom: 1px solid #ccc;
+  }
+  #super_heroes li:nth-child(3){
+    background-image: url(../img/pinkranger.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #super_heroes li:nth-child(2){
+    background-image: url(../img/doctorgf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #super_heroes li:nth-child(1){
+    background-image: url(../img/brock2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
